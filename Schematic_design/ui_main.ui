@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2047</width>
+    <height>1288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget_1">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>10</y>
+      <width>361</width>
+      <height>1351</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="stackedWidgetPage1">
+     <widget class="QLineEdit" name="designator_Edit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>530</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>550</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Designator</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>600</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Comment</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="comment_Edit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>600</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="component_listWidget">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>31</y>
+        <width>321</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="dragEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DragOnly</enum>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="pin_tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>671</y>
+        <width>321</width>
+        <height>391</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLineEdit" name="comment_Edit_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>590</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>590</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Comment</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="designator_Edit_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>520</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>540</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Designator</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="component_listWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>21</y>
+        <width>321</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="dragEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DragOnly</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>660</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Footprint</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="footprint_Edit_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>660</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="wire_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>导线</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>1611</width>
+      <height>1171</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+   <widget class="QPushButton" name="delete_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>20</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>删除</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rotate_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>20</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>旋转</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="group_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>20</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>组合</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletegroup_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>20</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>取消组合</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2047</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menuexport">
+     <property name="title">
+      <string>导出</string>
+     </property>
+     <widget class="QMenu" name="menuNetlist">
+      <property name="title">
+       <string>Netlist</string>
+      </property>
+      <addaction name="actionPADS"/>
+      <addaction name="actionProtel"/>
+     </widget>
+     <addaction name="menuNetlist"/>
+    </widget>
+    <addaction name="actionimport"/>
+    <addaction name="menuexport"/>
+   </widget>
+   <widget class="QMenu" name="menu_change">
+    <property name="title">
+     <string>切换页面</string>
+    </property>
+    <addaction name="actionpage"/>
+    <addaction name="actionpage_2"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_change"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionimport">
+   <property name="text">
+    <string>导入</string>
+   </property>
+  </action>
+  <action name="actionpage">
+   <property name="text">
+    <string>库界面</string>
+   </property>
+  </action>
+  <action name="actionpage_2">
+   <property name="text">
+    <string>原理图界面</string>
+   </property>
+  </action>
+  <action name="actionPADS">
+   <property name="text">
+    <string>PADS</string>
+   </property>
+  </action>
+  <action name="actionProtel">
+   <property name="text">
+    <string>Protel</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
