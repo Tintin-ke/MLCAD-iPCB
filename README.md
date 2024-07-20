@@ -31,8 +31,6 @@ pip install protobuf==3.19.0
     
     │   ├── output     // trained text detection model
     
-    │   ├── paddleocr.py  
-    
     │   └── __init__.py
     
     ├── PaddleX            // trained Text Orientation Classifier model
