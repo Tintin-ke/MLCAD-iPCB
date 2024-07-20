@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1064</width>
+    <height>827</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,14">
+    <item>
+     <widget class="QTreeWidget" name="menu_change">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <attribute name="headerVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="headerCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="headerHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="headerShowSortIndicator" stdset="0">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>界面切换</string>
+       </property>
+       <property name="font">
+        <font>
+         <italic>true</italic>
+        </font>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string>识别</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>编辑</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>符号库</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabBar::tab{width:100}
+
+QTabBar::tab{height:40}</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="form1">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget_7" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,4">
+           <item>
+            <widget class="QWidget" name="widget_5" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0,0">
+              <item>
+               <widget class="QGroupBox" name="groupBox_4">
+                <property name="title">
+                 <string>操作</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="0" column="0">
+                  <widget class="QWidget" name="widget_2" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_2">
+                    <item>
+                     <widget class="QPushButton" name="open_image_btn">
+                      <property name="text">
+                       <string>打开文件</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="seg_btn">
+                      <property name="mouseTracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>图像切分</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="identify_btn">
+                      <property name="mouseTracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>开始识别</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox">
+                <property name="title">
+                 <string>类型选择</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <item row="0" column="0">
+                  <widget class="QWidget" name="widget" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout">
+                    <item>
+                     <widget class="QRadioButton" name="dual_up_btn">
+                      <property name="text">
+                       <string>双列（上下）</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="dual_left_btn">
+                      <property name="text">
+                       <string>双列（左右）</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="quad_btn">
+                      <property name="contextMenuPolicy">
+                       <enum>Qt::DefaultContextMenu</enum>
+                      </property>
+                      <property name="text">
+                       <string>四列</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_2">
+                <property name="title">
+                 <string>图像操作</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <item row="0" column="0">
+                  <widget class="QWidget" name="widget_3" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_5">
+                    <item>
+                     <widget class="QPushButton" name="up_image_btn">
+                      <property name="mouseTracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>上一张</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="next_image_btn">
+                      <property name="minimumSize">
+                       <size>
+                        <width>121</width>
+                        <height>28</height>
+                       </size>
+                      </property>
+                      <property name="mouseTracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>下一张</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_3">
+                <property name="title">
+                 <string>旋转</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <item row="0" column="0">
+                  <widget class="QWidget" name="widget_4" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_3">
+                    <item>
+                     <widget class="QPushButton" name="sin90_btn">
+                      <property name="mouseTracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="contextMenuPolicy">
+                       <enum>Qt::NoContextMenu</enum>
+                      </property>
+                      <property name="text">
+                       <string>左旋90°</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="dex90_btn">
+                      <property name="mouseTracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>右旋90°</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="auto_rot_btn">
+                      <property name="mouseTracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>自动旋转</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_6" native="true">
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>文件路径：</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="file_path_line"/>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLabel" name="image_label">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="form2">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget_8" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="0,3,5,1,5">
+           <item>
+            <widget class="QWidget" name="widget_11" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0">
+              <item>
+               <widget class="QWidget" name="widget_12" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_12">
+                 <item>
+                  <widget class="QGroupBox" name="groupBox_6">
+                   <property name="title">
+                    <string/>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_12">
+                    <item row="4" column="0">
+                     <widget class="QPushButton" name="edit_btn">
+                      <property name="text">
+                       <string>编辑</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QPushButton" name="add_btn">
+                      <property name="text">
+                       <string>增加</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QPushButton" name="save_btn">
+                      <property name="text">
+                       <string>保存</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QPushButton" name="delete_btn_2">
+                      <property name="text">
+                       <string>删除</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QPushButton" name="export_btn">
+                      <property name="text">
+                       <string>导出</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listWidget"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="tableWidget">
+             <property name="gridStyle">
+              <enum>Qt::SolidLine</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_17" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QPushButton" name="addgroup_btn">
+                <property name="text">
+                 <string>添加分组</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="input_btn">
+                <property name="text">
+                 <string>&gt;&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="output_btn">
+                <property name="text">
+                 <string>&lt;&lt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="tableWidget_2"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="form3">
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget_9" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,7,2">
+           <item>
+            <widget class="QWidget" name="widget_13" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_8" stretch="1">
+              <item>
+               <widget class="QGroupBox" name="groupBox_7">
+                <property name="title">
+                 <string/>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9" stretch="0">
+                 <property name="spacing">
+                  <number>6</number>
+                 </property>
+                 <item>
+                  <widget class="QWidget" name="widget_15" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_10" stretch="1,1,1,6">
+                    <item>
+                     <widget class="QPushButton" name="import_btn">
+                      <property name="text">
+                       <string>导入</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="rotate_btn">
+                      <property name="text">
+                       <string>旋转</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="delete_btn">
+                      <property name="text">
+                       <string>删除</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="widget_14" native="true"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="library_widget" native="true"/>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_5">
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_9" rowstretch="0,0">
+              <item row="1" column="0">
+               <widget class="QToolBox" name="toolBox">
+                <property name="mouseTracking">
+                 <bool>true</bool>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <widget class="QWidget" name="page">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>98</width>
+                   <height>79</height>
+                  </rect>
+                 </property>
+                 <attribute name="label">
+                  <string>元器件</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <widget class="QListWidget" name="component_listWidget">
+                    <property name="dragEnabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="dragDropOverwriteMode">
+                     <bool>true</bool>
+                    </property>
+                    <property name="viewMode">
+                     <enum>QListView::ListMode</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="page_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>156</width>
+                   <height>701</height>
+                  </rect>
+                 </property>
+                 <attribute name="label">
+                  <string>属性</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_10" rowstretch="1,1,15">
+                  <item row="0" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    <item>
+                     <widget class="QLabel" name="label_3">
+                      <property name="text">
+                       <string>元件位号</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="designator_line"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item>
+                     <widget class="QLabel" name="label_4">
+                      <property name="text">
+                       <string>注释</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="comment_line"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QWidget" name="widget_10" native="true"/>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="action1">
+   <property name="text">
+    <string>1</string>
+   </property>
+  </action>
+  <action name="action2">
+   <property name="text">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="action3">
+   <property name="text">
+    <string>3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
