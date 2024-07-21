@@ -15,6 +15,7 @@ pip install paddlex -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install filelock
 pip install xlrd
 pip install protobuf==3.19.0
+pip install Levenshtein
 ```
 
 
