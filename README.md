@@ -17,6 +17,8 @@ pip install xlrd
 pip install protobuf==3.19.0
 pip install Levenshtein
 ```
+https://easylink.cc/i92vk4
+This link is a demo video of the installation environment.
 
 ## Using requirements.txt to import the environment, you can try
 ```
