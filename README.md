@@ -18,6 +18,25 @@ pip install protobuf==3.19.0
 pip install Levenshtein
 ```
 
+## Using requirements.txt to import the environment, you can try
+```
+pip install -r requirements.txt
+```
+or
+```
+conda install --yes --file requirements.txt 
+```
+
+## Using environment.yaml to import the environment, you can try
+```
+conda env create -f environment.yaml
+```
+
+## Direct download of environment
+There may be various problems when installing the environment, so I packed my local environment and put it on OneDrive. If there are problems during installation, you can download the compressed package directly from OneDrive.
+Unzip the environment package into a new folder and configure the python interpreter as "python.exe" in the folder in PyCharm.
+The OneDrive website is as follows:
+https://1drv.ms/u/s!Ash-dyUui6GwkFas0cbdtAnjJ5BU?e=VxWlw7
 
 ## Directory structure description
     ├── README.md           // Help documentation
