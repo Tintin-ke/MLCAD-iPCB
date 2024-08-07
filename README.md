@@ -22,12 +22,11 @@ https://easylink.cc/i92vk4
 This link is a demo video of the installation environment.
 
 ## Using requirements.txt to import the environment, you can try
+We exported the requirements.txt file with pip and the requirements_.txt file exported by conda respectively. You can try the following command to install the dependency.
 ```
 pip install -r requirements.txt
-```
-or
-```
-conda install --yes --file requirements.txt 
+conda install --yes --file requirements_.txt
+
 ```
 
 ## Using environment.yaml to import the environment, you can try
