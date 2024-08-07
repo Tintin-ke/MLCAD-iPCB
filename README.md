@@ -38,7 +38,7 @@ conda env create -f environment.yaml
 There may be various problems when installing the environment, so I packed my local environment and put it on OneDrive. If there are problems during installation, you can download the compressed package directly from OneDrive.
 Unzip the environment package into a new folder and configure the python interpreter as "python.exe" in the folder in PyCharm.
 The OneDrive website is as follows:
-https://1drv.ms/u/s!Ash-dyUui6GwkFas0cbdtAnjJ5BU?e=VxWlw7
+https://1drv.ms/u/s!Ash-dyUui6GwkFfS7Ew6aYBWTDqr?e=ffWXci
 
 ## Directory structure description
     ├── README.md           // Help documentation
