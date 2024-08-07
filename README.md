@@ -11,6 +11,7 @@ conda install paddlepaddle==2.4.0 --channel https://mirrors.tuna.tsinghua.edu.cn
 pip install "paddleocr>=2.0.1"
 pip install Polygon3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install lanms-neo
+pip install pyyaml
 pip install paddlex -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install filelock
 pip install xlrd
